@@ -6,16 +6,10 @@ import {
   getGameStatusElement,
 } from './selectors.js';
 
-// console.log(getCellElementList());
-// console.log(getCurrentTurnElement());
-// console.log(getGameStatusElement());
-// console.log(getCellElementAtIdx(4));
-
 /**
  * Global variablesinitCellElementList()
  */
 let currentTurn = TURN.CROSS;
-let isGameEnded = false;
 let cellValues = new Array(9).fill('');
 
 function toggleTurn() {
